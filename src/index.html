@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k213895 Sarib</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="h-screen">
+    <nav class="bg-blue-500 p-2 h-20">
+        <ul class="flex items-center my-2 mx-20">
+            <li><a href=""><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl  px-4 py-2 rounded-full">HOME</span></a></li>
+            <li><select name="COURSE" id="" class="hover:bg-white  hover:text-gray-400 mx-5 text-white text-2xl text-center py-2 rounded-full bg-blue-500 w-40 outline-none">
+                <option value=""selected disabled>COURSE</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JAVASCRIPT">JAVASCRIPT</option>
+                <option value="BOOTSTRAP">BOOTSTRAP</option>
+                <option value="TAILWIND">TAILWIND</option>
+
+            </select></li>
+            <li><a href="quiz.html"><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl  px-4 py-2 rounded-full" id="quiz">QUIZ</span></a></li>
+            <li><a href=""><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl hidden sm:block px-4 py-2 rounded-full">CONTACT</span></a></li>
+            <li><a href=""><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl hidden sm:block px-4 py-2 rounded-full">ABOUT US</span></a></li>
+        </ul>
+    </nav>
+    <div class="grid grid-cols-1 sm:grid-cols-6 h-5/6 visible" id="learning">
+        <div class="bg-blue-500 pt-10">
+            <ul class="my-5 grid grid-cols-1 gap-y-5 text-white text-2xl">
+                <li onclick="req('HTML')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c1">HTML</a></li>
+                <li onclick="req('CSS')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c2">CSS</a></li>
+                <li onclick="req('JAVASCRIPT')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c3">JAVASCRIPT</a></li>
+                <li onclick="req('BOOTSTRAP')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c4">BOOTSTRAP</a></li>
+                <li onclick="req('TAILWIND')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c5">TAILWIND</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-span-5" id="info">
+            <p class="text-blue-500 text-2xl font-semibold mx-10 mt-5 underline" id="heading"></p>
+            <p class="text-sm mx-10" id="detail"></p>
+            <div class="col-span-5 mx-10" id="video">
+                <iframe width="1200" height="380" frameborder="0"></iframe>
+            </div>
+            <div class="flex mt-5 mx-5 justify-between">
+                <button class="bg-green-500 end-1 text-white rounded-full px-4 py-2 hover:bg-white hover:text-green-500 border hover:border-green-500" id="previous" hidden>PREVIOUS</button>
+                <button class="bg-green-500 end-1 text-white rounded-full px-4 py-2 hover:bg-white hover:text-green-500 border hover:border-green-500" id="next" hidden>NEXT</button>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-blue-500 h-9 text-center">
+        <span class="text-center text-2xl text-white">K213895 Sarib</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

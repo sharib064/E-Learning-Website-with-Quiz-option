@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k213895 Sarib</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <nav class="bg-blue-500 p-2 h-20">
+        <ul class="flex items-center my-2 mx-20">
+            <li><a href="index.html"><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl  px-4 py-2 rounded-full">HOME</span></a></li>
+            <li><a><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl  px-4 py-2 rounded-full" id="quiz">QUIZ</span></a></li>
+            <li><a href=""><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl hidden sm:block px-4 py-2 rounded-full">CONTACT</span></a></li>
+            <li><a href=""><span class="hover:bg-white hover:text-gray-400 mx-5 text-white text-2xl hidden sm:block px-4 py-2 rounded-full">ABOUT US</span></a></li>
+        </ul>
+    </nav>
+    <div class="grid grid-cols-1 sm:grid-cols-6" id="quizCon">
+        <div class="bg-blue-500 pt-10 pb-28">
+            <ul class="my-5 grid grid-cols-1 gap-y-5 text-white text-2xl">
+                <li onclick="req('HTML')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c1">HTML</a></li>
+                <li onclick="req('CSS')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c2">CSS</a></li>
+                <li onclick="req('JAVASCRIPT')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c3">JAVASCRIPT</a></li>
+                <li onclick="req('BOOTSTRAP')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c4">BOOTSTRAP</a></li>
+                <li onclick="req('TAILWIND')" class="my-1 rounded-full hover:bg-white hover:text-gray-400 text-center py-2"><a class=" rounded-full" id="c5">TAILWIND</a></li>
+            </ul>
+        </div>
+        <div class="col-span-5 text-center mt-10">
+            <span class="bg-blue-500 px-4 py-2 text-white rounded-full text-2xl" id="topic">Quiz</span>
+            <p id="ques" class="text-lg text-black mx-20 mt-10"></p>
+            <div class="grid grid-cols-2 mt-5 mx-5 justify-between">
+                <button class="bg-green-500 text-white rounded-full px-4 py-2 hover:bg-white hover:text-green-500 mb-10 ml-5 border hover:border-green-500" id="b1" value="1"></button>
+                <button class="bg-green-500 text-white rounded-full px-4 py-2 hover:bg-white hover:text-green-500 mb-10 ml-5 border hover:border-green-500" id="b2" value="2"></button>
+                <button class="bg-green-500 text-white rounded-full px-4 py-2 hover:bg-white hover:text-green-500 mb-10 ml-5 border hover:border-green-500" id="b3" value="3"></button>
+                <button class="bg-green-500 text-white rounded-full px-4 py-2 hover:bg-white hover:text-green-500 mb-10 ml-5 border hover:border-green-500" id="b4" value="4"></button>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-blue-500 py-3 mt-1 text-center">
+        <span class="text-center text-2xl text-white">K213895 Sarib</span>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>
